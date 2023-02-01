@@ -6,7 +6,7 @@
 
 .banner{
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background-image:linear-gradient(rgba(0,0,0,0.75),rgb(0,0,0,0.75)),url(background.jpg);
     background-size: cover;
     background-position: center;
@@ -204,6 +204,7 @@ a:is(:link,:active,:visited).active{
     filter:blur(5px);
     transform: translateX(-100%);
     transition: all 1s;
+    padding-right: 40px;
 }
 .show{
     opacity: 1;
@@ -221,5 +222,9 @@ a:is(:link,:active,:visited).active{
 }
 
 .featured-item p{
+    text-align: justify;
+}
+
+.hidden .test{
     text-align: justify;
 }
