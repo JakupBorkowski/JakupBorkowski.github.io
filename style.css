@@ -234,8 +234,8 @@ a:is(:link,:active,:visited).active{
 }
 
 .flex-container{
-    margin-top: 5vh;
-    width: 80%;
+    margin-top: 25px;
+    width: 90%;
     display:flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -285,4 +285,61 @@ a:is(:link,:active,:visited).active{
     -moz-box-shadow: 0 0 3px rgba(71.4,200.4,242.9,1);
     -webkit-box-shadow: 0 0 3px rgba(71.4,200.4,242.9,1);
     box-shadow: 0 0 3px rgba(71.4,200.4,242.9,1);
+  }
+
+
+  @media screen and (max-width: 1000px) {
+    .flex-container{
+        margin-top: 25px;
+        width: 80%;
+        display:flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    
+    .flex-card-wrapper
+    {
+        max-width: 350px;
+    }
+    
+    .flex-title{
+        margin: 0 10px;
+        color: white;
+        text-align:center;
+        font-size: 22px;
+        font-weight: 500;
+        font-family: "Montserrat", serif;
+        margin-bottom: 20px;
+    }
+    
+    .flex-card{
+        margin-bottom: 20px;
+        padding: 0;
+        width:350px;
+        height: 200px;
+        border-radius: 12px;
+        -moz-box-shadow: 0 0 3px #ccc;
+        -webkit-box-shadow: 0 0 3px #ccc;
+        box-shadow: 0 0 3px #ccc;
+    }
+    
+    .flex-card img {
+        width:350px;
+        height: 200px;
+        object-fit: cover;
+        cursor: pointer;
+        border-radius: 12px; 
+        transition: all .2s ease-in-out; 
+      }
+    
+      
+    
+    
+      .flex-card img:hover{
+        transition: all .2s ease-in-out; 
+        transform: scale(1.1);
+        -moz-box-shadow: 0 0 3px rgba(71.4,200.4,242.9,1);
+        -webkit-box-shadow: 0 0 3px rgba(71.4,200.4,242.9,1);
+        box-shadow: 0 0 3px rgba(71.4,200.4,242.9,1);
+      }
   }
