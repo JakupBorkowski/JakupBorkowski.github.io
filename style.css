@@ -236,32 +236,48 @@ a:is(:link,:active,:visited).active{
     justify-content: space-around;
     flex-wrap: wrap;
 }
+
+.flex-card-wrapper
+{
+    max-width: 450px;
+}
+
+.flex-title{
+    margin: 0 10px;
+    color: white;
+    text-align:center;
+    font-size: 22px;
+    font-weight: 500;
+    font-family: "Montserrat", serif;
+    margin-bottom: 20px;
+}
+
 .flex-card{
-    margin-bottom: 5vh;
+    margin-bottom: 20px;
     padding: 0;
     width:450px;
-    height: 350px;
+    height: 300px;
     border-radius: 12px;
-    box-shadow: 5px 5px 2px 1px rgba(71.4,200.4,242.9,.2);
-    align-items: center;
-    justify-content: center;
-    pointer-events: visible;
+    -moz-box-shadow: 0 0 3px #ccc;
+    -webkit-box-shadow: 0 0 3px #ccc;
+    box-shadow: 0 0 3px #ccc;
 }
 
 .flex-card img {
     width:450px;
-    height: 350px;
+    height: 300px;
     object-fit: cover;
-    pointer-events: all;
+    cursor: pointer;
     border-radius: 12px; 
+    
   }
 
   .flex-card img:hover
   {
     width:460px;
-    height: 360px;
-  }
-
-  .flex-card:hover{
-    box-shadow: 15px 15px 2px 1px rgba(71.4,200.4,242.9,.55);
+    height: 310px;
+    
+    -moz-box-shadow: 0 0 3px rgba(71.4,200.4,242.9,1);
+    -webkit-box-shadow: 0 0 3px rgba(71.4,200.4,242.9,1);
+    box-shadow: 0 0 6px rgba(71.4,200.4,242.9,1);
   }
