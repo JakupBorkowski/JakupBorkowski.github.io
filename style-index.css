@@ -214,7 +214,9 @@ a:is(:link,:active,:visited).active{
 .box{
     width: 900px;
     background-color: rgba(0,0,0,0.4);
-    padding: 40px;
+    padding-top: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
     border-radius: 50px;;
     text-align: center;
     /*margin-top: 1%;*/
@@ -227,8 +229,8 @@ a:is(:link,:active,:visited).active{
 
 .box-img{
     border-radius: 50%;
-    width:250px;
-    height:250px;
+    width:200px;
+    height:200px;
 }
 
 .box h1{
