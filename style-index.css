@@ -211,7 +211,7 @@ a:is(:link,:active,:visited).active{
     filter: blur(0);
 }
 
-.box{
+.box, .box2{
     width: 900px;
     background-color: rgba(0,0,0,0.4);
     padding-top: 10px;
@@ -233,46 +233,61 @@ a:is(:link,:active,:visited).active{
     height:200px;
 }
 
-.box h1{
+.box h1,
+.box2 h1{
     font-size: 40px;
     letter-spacing: 3px;
     font-weight: 100;
 }
 
-.box h5{
+.box h5,
+.box2 h5{
     font-size: 25px;
     letter-spacing: 2px;
     font-weight: 100;
 }
 
-.box p{
+.box p,
+.box2 p{
     text-align: justify;
 }
 
-.box ul{
+.box ul,
+.box2 ul{
     margin:0;
     padding: 0;
 
 }
 
-.box li{
+.box li,
+.box2 li{
     display:inline-block;
     margin: 10px;
     list-style: none;
 }
 
-.box li a i{
+.box li a i,
+.box2 li a i{
     color: white;
     text-decoration: none;
     font-size: 60px;
 }
 
-.box li a i:hover{
+.box li a i:hover,
+.box2 li a i:hover
+{
     color: rgba(71.4,200.4,242.9,1);
 }
 
-.box li a img{
+.box li a img,
+.box2 li a img
+{
     color: white;
     width: 85px;
     height: 85px;
+}
+
+@media screen and (max-width: 1000px)
+{
+    
 }
