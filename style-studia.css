@@ -1,0 +1,23 @@
+button{
+    width: 150px;
+    padding: 13px 0;
+    text-align: center;
+    margin: 20px 10px 0px 0px;
+    border-radius:25px;
+    font-weight: bold;
+    border: 2px solid rgba(71.4,200.4,242.9,1);
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+}
+
+
+button:hover span{
+    width: 100%;
+}
+
+button:hover {
+    border: none;
+}
