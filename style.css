@@ -10,6 +10,14 @@
     background-image:linear-gradient(rgba(0,0,0,0.1),rgb(0,0,0,0.1)),url(tlo.png);
     background-size: cover;
     background-position: center;
+
+    
+    -webkit-filter: blur(0px);
+    -moz-filter: blur(0px);
+    -o-filter: blur(0px);
+    -ms-filter: blur(0px);
+    filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='0'); 
+    filter: blur(0px); 
 }
 .navbar{
     background-color: rgba(0,0,0,.5);
@@ -265,6 +273,8 @@ a:is(:link,:active,:visited).active{
     -moz-box-shadow: 0 0 3px #ccc;
     -webkit-box-shadow: 0 0 3px #ccc;
     box-shadow: 0 0 3px #ccc;
+
+
 }
 
 .flex-card img {
@@ -273,7 +283,7 @@ a:is(:link,:active,:visited).active{
     object-fit: cover;
     cursor: pointer;
     border-radius: 12px; 
-    transition: all .2s ease-in-out; 
+    transition: all .2s ease-in-out;
   }
 
   
@@ -342,4 +352,50 @@ a:is(:link,:active,:visited).active{
         -webkit-box-shadow: 0 0 3px rgba(71.4,200.4,242.9,1);
         box-shadow: 0 0 3px rgba(71.4,200.4,242.9,1);
       }
+  }
+
+
+  .banner#blur.active-blur
+  {
+    -webkit-filter: blur(20px); 
+    -moz-filter: blur(20px);
+    -o-filter: blur(20px);
+    -ms-filter: blur(20px); 
+    filter: url(#blur); 
+    filter: blur(20px);  
+    filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='3');
+    -webkit-transition: 0.8s -webkit-filter linear;
+    -o-transition: 0.8s -o-filter linear;
+    pointer-events: none;
+    user-select: none;
+  }
+
+
+
+  #popup
+  {
+    position: fixed;
+    top:40%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width: 600px;
+    padding: 50px;
+    box-shadow: 0 5px 30px rgba(0,0,0,.30);
+    background: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+  }
+
+  #popup a{
+    padding: 5px;
+    background-color: black;
+  }
+
+  #popup.active
+  {
+    top:50%;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
   }

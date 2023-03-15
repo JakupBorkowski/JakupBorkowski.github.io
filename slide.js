@@ -10,6 +10,7 @@ images[4] = 'js.png';
 images[5] = 'mysql.png';
 images[6] = 'java.png';
 images[7] = 'docker.png';
+images[8] = 'raspberry-pi.png';
 
 function changeImg(){
     let tmpI = i;

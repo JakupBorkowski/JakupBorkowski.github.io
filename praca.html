@@ -6,7 +6,7 @@
         <script defer src="activePage.js"></script>
     </head>
     <body>
-        <div class="banner">
+        <div class="banner" id="blur">
             <div class="navbar">
                 <div class = "card">
                     <a href="/index.html"><img src="logo.png"></a>
@@ -61,7 +61,7 @@
                     </div>
                 </div>
                 <div class="flex-card-wrapper">
-                    <div class="flex-card">
+                    <div class="flex-card" onclick="toggleBlur()">
                         <img src="gnutti_ibp.png" alt="gnutti_ibp">
                     </div>
                     <div class="flex-title">
@@ -77,5 +77,23 @@
             <p>&copy; 2022 Jakub Borkowski</p>
            </div>
 
+        <div id="popup">
+            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+            <p> A facilis veritatis cupiditate unde explicabo optio, 
+                ipsam doloribus exercitationem officiis inventore eius 
+                rerum earum expedita minus eos voluptate laborum autem praesentium.</p>
+                <a href="#" onclick="toggleBlur()">Close </a>
+        </div>
+    <script type="text/javascript">
+        function toggleBlur()
+        {
+            var blur = document.getElementById('blur');
+            blur.classList.toggle('active-blur');
+            
+            var popup = document.getElementById('popup');
+            popup.classList.toggle('active');
+
+        }
+    </script>
     </body>
 </html>
