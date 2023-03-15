@@ -357,12 +357,12 @@ a:is(:link,:active,:visited).active{
 
   .banner#blur.active-blur
   {
-    -webkit-filter: blur(20px); 
-    -moz-filter: blur(20px);
-    -o-filter: blur(20px);
-    -ms-filter: blur(20px); 
+    -webkit-filter: blur(10px); 
+    -moz-filter: blur(10px);
+    -o-filter: blur(10px);
+    -ms-filter: blur(10px); 
     filter: url(#blur); 
-    filter: blur(20px);  
+    filter: blur(10px);  
     filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='3');
     -webkit-transition: 0.8s -webkit-filter linear;
     -o-transition: 0.8s -o-filter linear;
@@ -372,7 +372,12 @@ a:is(:link,:active,:visited).active{
 
 
 
-  #popup
+  #popup1,
+  #popup2,
+  #popup3,
+  #popup4,
+  #popup5,
+  #popup6
   {
     position: fixed;
     top:40%;
@@ -387,12 +392,22 @@ a:is(:link,:active,:visited).active{
     transition: 0.5s;
   }
 
-  #popup a{
+  #popup1 a,
+  #popup2 a,
+  #popup3 a,
+  #popup4 a,
+  #popup5 a,
+  #popup6 a{
     padding: 5px;
     background-color: black;
   }
 
-  #popup.active
+  #popup1.active,
+  #popup2.active,
+  #popup3.active,
+  #popup4.active,
+  #popup5.active,
+  #popup6.active
   {
     top:50%;
     visibility: visible;
