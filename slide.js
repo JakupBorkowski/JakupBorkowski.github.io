@@ -11,6 +11,12 @@ images[5] = 'mysql.png';
 images[6] = 'java.png';
 images[7] = 'docker.png';
 images[8] = 'raspberry-pi.png';
+images[9] = 'Icon-SOLIDWORKS-Electrical.png';
+images[10] = 'tia.jpg';
+images[11] = 'vsc.png';
+images[12] = 'vs.png';
+images[13] = 'gt3.png';
+images[14] = 'gx3.ico';
 
 function changeImg(){
     let tmpI = i;
