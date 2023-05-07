@@ -208,7 +208,7 @@ a:is(:link,:active,:visited).active{
     width: 450px;
     background-color: rgba(0,0,0,0.4);
     padding: 40px;
-    border-radius: 50px;;
+    border-radius: 50px;
     text-align: center;
     margin: 100px auto;
 }
@@ -357,16 +357,19 @@ a:is(:link,:active,:visited).active{
   #popup3,
   #popup4,
   #popup5,
-  #popup6
+  #popup6,
+  #popup7,
+  #popup8,
+  #popup9
   {
     position: fixed;
     top:40%;
     left:50%;
     transform: translate(-50%,-50%);
-    width: 800px;
+    max-width: 800px;
     padding: 50px;
     box-shadow: 0 5px 30px rgba(0,0,0,.30);
-    background: #ffffff;
+    background: rgba(255, 255, 255, 0.65);;
     visibility: hidden;
     opacity: 0;
     transition: 0.5s;
@@ -378,7 +381,10 @@ a:is(:link,:active,:visited).active{
   #popup3 a,
   #popup4 a,
   #popup5 a,
-  #popup6 a{
+  #popup6 a,
+  #popup7 a,
+  #popup8 a,
+  #popup9 a{
     background-color: black;
   }
 
@@ -387,7 +393,10 @@ a:is(:link,:active,:visited).active{
   #popup3.active,
   #popup4.active,
   #popup5.active,
-  #popup6.active
+  #popup6.active,
+  #popup7.active,
+  #popup8.active,
+  #popup9.active
   {
     top:50%;
     visibility: visible;
@@ -401,7 +410,10 @@ a:is(:link,:active,:visited).active{
   #popup3 img,
   #popup4 img,
   #popup5 img,
-  #popup6 img {
+  #popup6 img,
+  #popup7 img,
+  #popup8 img,
+  #popup9 img {
     max-width:600px;
     height: auto;
     object-fit: cover;
@@ -416,7 +428,10 @@ a:is(:link,:active,:visited).active{
   #popup3 h2,
   #popup4 h2,
   #popup5 h2,
-  #popup6 h2{
+  #popup6 h2,
+  #popup7 h2,
+  #popup8 h2,
+  #popup9 h2{
     text-align:center;
   }
 
@@ -452,10 +467,18 @@ a:is(:link,:active,:visited).active{
     font-size: 20px;
     font-weight: 500;
   }
-  #popup1 .sixtosix a{
+  #popup1 .sixtosix a,
+  #popup2 .sixtosix a,
+  #popup3 .sixtosix a,
+  #popup4 .sixtosix a,
+  #popup5 .sixtosix a,
+  #popup6 .sixtosix a,
+  #popup7 .sixtosix a,
+  #popup8 .sixtosix a,
+  #popup9 .sixtosix a{
     margin: 0;
-    padding-bottom: 5px;
-    padding-right: 5px;
+    margin-bottom: 5px;
+    margin-right: 55px;
     background-color: transparent;
     display: flex;
     align-items: center;

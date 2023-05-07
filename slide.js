@@ -2,21 +2,21 @@ var i = 0;
 var images = [];
 var time = 1500;
 
-images[0] = 'css-3.png';
-images[1] ='python.png';
-images[2] = 'c-.png';
-images[3] = 'c-sharp.png';
-images[4] = 'js.png';
-images[5] = 'mysql.png';
-images[6] = 'java.png';
-images[7] = 'docker.png';
-images[8] = 'raspberry-pi.png';
-images[9] = 'Icon-SOLIDWORKS-Electrical.png';
-images[10] = 'tia.jpg';
-images[11] = 'vsc.png';
-images[12] = 'vs.png';
-images[13] = 'gt3.png';
-images[14] = 'gx3.ico';
+images[0] = 'technologies/css-3.png';
+images[1] ='technologies/python.png';
+images[2] = 'technologies/c-.png';
+images[3] = 'technologies/c-sharp.png';
+images[4] = 'technologies/js.png';
+images[5] = 'technologies/mysql.png';
+images[6] = 'technologies/java.png';
+images[7] = 'technologies/docker.png';
+images[8] = 'technologies/raspberry-pi.png';
+images[9] = 'technologies/Icon-SOLIDWORKS-Electrical.png';
+images[10] = 'technologies/tia.jpg';
+images[11] = 'technologies/vsc.png';
+images[12] = 'technologies/vs.png';
+images[13] = 'technologies/gt3.png';
+images[14] = 'technologies/gx3.ico';
 
 function changeImg(){
     let tmpI = i;
