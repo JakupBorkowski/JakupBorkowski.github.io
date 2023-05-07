@@ -71,7 +71,7 @@
                 </div>
                 <div class="flex-card-wrapper">
                     <div class="flex-card" onclick="toggleBlur7()" id="7">
-                        <img src="gnutti_ibp.png" alt="gnutti_ibp">
+                        <img src="Ster-projekt-web.png" alt="gnutti_ibp">
                     </div>
                     <div class="flex-title">
                         <label for=""></label>
@@ -80,13 +80,22 @@
                 </div>
                 <div class="flex-card-wrapper">
                     <div class="flex-card" onclick="toggleBlur8()" id="8">
-                        <img src="gnutti_ibp.png" alt="gnutti_ibp">
+                        <img src="background.jpg" alt="gnutti_ibp">
                     </div>
                     <div class="flex-title">
                         <label for=""></label>
                         APLIKACJA DESKTOPOWA DO ZBIERANIA INFORMACJI NA TEMAT PRĄDU I POŁOŻENIA ENKODERA (INOP)
                     </div>
-                </div>            
+                </div>   
+                <div class="flex-card-wrapper">
+                    <div class="flex-card" onclick="toggleBlur9()" id="9">
+                        <img src="background.jpg" alt="gnutti_ibp">
+                    </div>
+                    <div class="flex-title">
+                        <label for=""></label>
+                        NOWY
+                    </div>
+                </div>         
             </div>
         </div>
 
@@ -274,7 +283,7 @@
             <h2>APLIKACJA DO ZBIERANIA DANYCH</h2>
             <br>
             <div style="text-align: center">
-                <img src="gnutti_ibp.png" alt="toyoda">
+                <img src="Ster-projekt-web.png" alt="toyoda">
             </div>
             <br>
             <p> 
@@ -303,6 +312,40 @@
         </div>
         <div id="popup8">
             <div class="close-btn" onclick="toggleBlur8()">
+                &times;
+            </div>
+            <h2>APLIKACJA DESKTOPOWA DO ZBIERANIA INFORMACJI NA TEMAT PRĄDU I POŁOŻENIA ENKODERA (INOP)</h2>
+            <br>
+            <div style="text-align: center">
+                <img src="gnutti_ibp.png" alt="toyoda">
+            </div>
+            <br>
+            <p> 
+                <h2>Uczestnictwo w:</h2> 
+            <ul>
+                <div class="center-popup">
+                    <div class="sixtosix">
+                        <a><img src="technologies/html-5.png" width="60" height="60" background="white"></a>
+                        Napisanie części aplikacji webowej w języku html
+                    </div>
+                    <div class="sixtosix">
+                        <a><img src="technologies/css-3.png" width="60" height="60" background="white"></a>
+                        Napisanie części aplikacji webowej w języku css
+                    </div>
+                    <div class="sixtosix">
+                        <a><img src="technologies/js.png" width="60" height="60" background="white"></a>
+                        Napisanie części aplikacji webowej w języku javascript
+                    </div>
+                    <div class="sixtosix">
+                        <a><img src="technologies/python.png" width="60" height="60" background="white"></a>
+                        Napisanie skryptów obsługujących automatyczne wysyłanie maili zawierających raporty wygenerowane przez aplikację webową
+                    </div>
+                </div>
+            </ul> 
+            </p>
+        </div>
+        <div id="popup9">
+            <div class="close-btn" onclick="toggleBlur9()">
                 &times;
             </div>
             <h2>APLIKACJA DESKTOPOWA DO ZBIERANIA INFORMACJI NA TEMAT PRĄDU I POŁOŻENIA ENKODERA (INOP)</h2>
@@ -399,7 +442,15 @@
             
             let popup = document.getElementById('popup8');
             popup.classList.toggle('active');
-        }        
+        }     
+        function toggleBlur9()
+        {
+            let blur = document.getElementById('blur');
+            blur.classList.toggle('active-blur');
+            
+            let popup = document.getElementById('popup9');
+            popup.classList.toggle('active');
+        }    
     </script>
     </body>
 </html>
