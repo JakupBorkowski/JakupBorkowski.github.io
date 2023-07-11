@@ -18,7 +18,7 @@
     padding: 3px 0;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center;   
 }
 
 .navbar li{
@@ -211,7 +211,7 @@ a:is(:link,:active,:visited).active{
     filter: blur(0);
 }
 
-.box, .box2{
+.box, .box2, .box-ang{
     max-width: 900px;
     background-color: rgba(0,0,0,0.4);
     padding-top: 10px;
@@ -234,32 +234,37 @@ a:is(:link,:active,:visited).active{
 }
 
 .box h1,
-.box2 h1{
+.box2 h1,
+.box-ang h1{
     font-size: 40px;
     letter-spacing: 3px;
     font-weight: 100;
 }
 
 .box h5,
-.box2 h5{
+.box2 h5,
+.box-ang h5{
     font-size: 25px;
     letter-spacing: 2px;
     font-weight: 100;
 }
 
 .box p,
-.box2 p{
+.box2 p,
+.box-ang p{
     text-align: justify;
 }
 
 .box ul,
-.box2 ul{
+.box2 ul,
+.box-ang ul{
     margin:0;
     padding: 0;
 
 }
 
 .box li,
+.box-ang li,
 .box2 li{
     display:inline-block;
     margin: 10px;
@@ -267,6 +272,7 @@ a:is(:link,:active,:visited).active{
 }
 
 .box li a i,
+.box-ang li a i,
 .box2 li a i{
     color: white;
     text-decoration: none;
@@ -274,12 +280,14 @@ a:is(:link,:active,:visited).active{
 }
 
 .box li a i:hover,
+.box-ang li a i:hover,
 .box2 li a i:hover
 {
     color: rgba(71.4,200.4,242.9,1);
 }
 
 .box li a img,
+.box-ang li a img,
 .box2 li a img
 {
     color: white;
@@ -291,3 +299,28 @@ a:is(:link,:active,:visited).active{
 {
     
 }
+
+div.absolute {
+    margin-top: 10px;
+    position: absolute;
+    top: 100px;
+    right: 0;
+    width: 120px;
+    height: 50px;
+  }
+
+  .flag,
+  div.absolute a{
+    min-width: 30;
+    min-height: 30;
+    cursor: pointer;
+  }
+
+  .above-navbar{
+    align-items: left;
+  }
+
+  a#eng{
+    min-width: 30;
+    min-height: 30;
+  }
