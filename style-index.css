@@ -229,8 +229,8 @@ a:is(:link,:active,:visited).active{
 
 .box-img{
     border-radius: 50%;
-    /*width:200px;
-    height:200px;*/
+    width:200px;
+    height:auto;
 }
 
 .box h1,
